@@ -18,11 +18,11 @@ SELECT Title, popularity
 FROM movies
 ORDER BY popularity DESC
 LIMIT 3;
-SELECT original_title, revenue
+SELECT Title, revenue
 FROM movies
 ORDER BY revenue DESC
 LIMIT 3;
-SELECT original_title, vote_average
+SELECT Title, vote_average
 FROM movies
 WHERE release_date >= '2000-01-01'
 ORDER BY vote_average DESC
@@ -43,6 +43,9 @@ JOIN movies m ON d.id = m.director_id
 GROUP BY d.id, d.name
 ORDER BY total_revenue DESC
 LIMIT 1;
+
+
+
 
 
 
